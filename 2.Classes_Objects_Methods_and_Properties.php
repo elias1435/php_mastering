@@ -9,12 +9,16 @@ class Human{
     }
 
     function sayName(){
-        echo "My name is {$this->name}";
+        echo "My name is {$this->name}\n";
     }
 }
 
 //object
 $h1 = new Human();
 $h2 = new Human();
-$h1->name = "Elias";
-$h2->name = "Hasin";
+
+$h1->name = "Rubel"; //set
+$h2->name = "Elias";
+
+$h1->sayHi();
+$h2->sayHi();
